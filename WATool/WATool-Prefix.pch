@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WATool' target in the 'WATool' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

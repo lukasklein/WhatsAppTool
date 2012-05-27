@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80E2546B157277CB00B7ABA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2546A157277CB00B7ABA7 /* Cocoa.framework */; };
+		80E25475157277CB00B7ABA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E25473157277CB00B7ABA7 /* InfoPlist.strings */; };
+		80E25477157277CB00B7ABA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E25476157277CB00B7ABA7 /* main.m */; };
+		80E2547B157277CB00B7ABA7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 80E25479157277CB00B7ABA7 /* Credits.rtf */; };
+		80E2547E157277CB00B7ABA7 /* WATAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E2547D157277CB00B7ABA7 /* WATAppDelegate.m */; };
+		80E25481157277CB00B7ABA7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E2547F157277CB00B7ABA7 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80E25466157277CB00B7ABA7 /* WATool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WATool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E2546A157277CB00B7ABA7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		80E2546D157277CB00B7ABA7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		80E2546E157277CB00B7ABA7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80E2546F157277CB00B7ABA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80E25472157277CB00B7ABA7 /* WATool-Info.plist */ = {isa = PBXFileReference; path = "WATool-Info.plist"; sourceTree = "<group>"; };
+		80E25474157277CB00B7ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80E25476157277CB00B7ABA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80E25478157277CB00B7ABA7 /* WATool-Prefix.pch */ = {isa = PBXFileReference; path = "WATool-Prefix.pch"; sourceTree = "<group>"; };
+		80E2547A157277CB00B7ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		80E2547C157277CB00B7ABA7 /* WATAppDelegate.h */ = {isa = PBXFileReference; path = WATAppDelegate.h; sourceTree = "<group>"; };
+		80E2547D157277CB00B7ABA7 /* WATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WATAppDelegate.m; sourceTree = "<group>"; };
+		80E25480157277CB00B7ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80E25463157277CB00B7ABA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E2546B157277CB00B7ABA7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80E2545B157277CB00B7ABA7 = {
+			isa = PBXGroup;
+			children = (
+				80E25470157277CB00B7ABA7 /* WATool */,
+				80E25469157277CB00B7ABA7 /* Frameworks */,
+				80E25467157277CB00B7ABA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80E25467157277CB00B7ABA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E25466157277CB00B7ABA7 /* WATool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E25469157277CB00B7ABA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E2546A157277CB00B7ABA7 /* Cocoa.framework */,
+				80E2546C157277CB00B7ABA7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E2546C157277CB00B7ABA7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E2546D157277CB00B7ABA7 /* AppKit.framework */,
+				80E2546E157277CB00B7ABA7 /* CoreData.framework */,
+				80E2546F157277CB00B7ABA7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		80E25470157277CB00B7ABA7 /* WATool */ = {
+			isa = PBXGroup;
+			children = (
+				80E2547C157277CB00B7ABA7 /* WATAppDelegate.h */,
+				80E2547D157277CB00B7ABA7 /* WATAppDelegate.m */,
+				80E2547F157277CB00B7ABA7 /* MainMenu.xib */,
+				80E25471157277CB00B7ABA7 /* Supporting Files */,
+			);
+			path = WATool;
+			sourceTree = "<group>";
+		};
+		80E25471157277CB00B7ABA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80E25472157277CB00B7ABA7 /* WATool-Info.plist */,
+				80E25473157277CB00B7ABA7 /* InfoPlist.strings */,
+				80E25476157277CB00B7ABA7 /* main.m */,
+				80E25478157277CB00B7ABA7 /* WATool-Prefix.pch */,
+				80E25479157277CB00B7ABA7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80E25465157277CB00B7ABA7 /* WATool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E25484157277CB00B7ABA7 /* Build configuration list for PBXNativeTarget "WATool" */;
+			buildPhases = (
+				80E25462157277CB00B7ABA7 /* Sources */,
+				80E25463157277CB00B7ABA7 /* Frameworks */,
+				80E25464157277CB00B7ABA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WATool;
+			productName = WATool;
+			productReference = 80E25466157277CB00B7ABA7 /* WATool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E2545D157277CB00B7ABA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WAT;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Xairro;
+			};
+			buildConfigurationList = 80E25460157277CB00B7ABA7 /* Build configuration list for PBXProject "WATool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80E2545B157277CB00B7ABA7;
+			productRefGroup = 80E25467157277CB00B7ABA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E25465157277CB00B7ABA7 /* WATool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80E25464157277CB00B7ABA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E25475157277CB00B7ABA7 /* InfoPlist.strings in Resources */,
+				80E2547B157277CB00B7ABA7 /* Credits.rtf in Resources */,
+				80E25481157277CB00B7ABA7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E25462157277CB00B7ABA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E25477157277CB00B7ABA7 /* main.m in Sources */,
+				80E2547E157277CB00B7ABA7 /* WATAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80E25473157277CB00B7ABA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E25474157277CB00B7ABA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80E25479157277CB00B7ABA7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E2547A157277CB00B7ABA7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		80E2547F157277CB00B7ABA7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E25480157277CB00B7ABA7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80E25482157277CB00B7ABA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		80E25483157277CB00B7ABA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		80E25485157277CB00B7ABA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WATool/WATool-Prefix.pch";
+				INFOPLIST_FILE = "WATool/WATool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80E25486157277CB00B7ABA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WATool/WATool-Prefix.pch";
+				INFOPLIST_FILE = "WATool/WATool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E25460157277CB00B7ABA7 /* Build configuration list for PBXProject "WATool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E25482157277CB00B7ABA7 /* Debug */,
+				80E25483157277CB00B7ABA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E25484157277CB00B7ABA7 /* Build configuration list for PBXNativeTarget "WATool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E25485157277CB00B7ABA7 /* Debug */,
+				80E25486157277CB00B7ABA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80E2545D157277CB00B7ABA7 /* Project object */;
+}
