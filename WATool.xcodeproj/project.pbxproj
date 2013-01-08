@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80626C641575984500A67533 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80626C631575984500A67533 /* libsqlite3.0.dylib */; };
+		80626C6A1575989D00A67533 /* SQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 80626C691575989D00A67533 /* SQLiteDatabase.m */; };
+		80626C6E1576755400A67533 /* iconcopy.icns in Resources */ = {isa = PBXBuildFile; fileRef = 80626C6D1576755400A67533 /* iconcopy.icns */; };
+		80626C701576758D00A67533 /* iconcopy.icns in Resources */ = {isa = PBXBuildFile; fileRef = 80626C6F1576758D00A67533 /* iconcopy.icns */; };
 		80E2546B157277CB00B7ABA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2546A157277CB00B7ABA7 /* Cocoa.framework */; };
 		80E25475157277CB00B7ABA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E25473157277CB00B7ABA7 /* InfoPlist.strings */; };
 		80E25477157277CB00B7ABA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E25476157277CB00B7ABA7 /* main.m */; };
@@ -16,19 +20,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80626C631575984500A67533 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		80626C681575989D00A67533 /* SQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDatabase.h; sourceTree = "<group>"; };
+		80626C691575989D00A67533 /* SQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDatabase.m; sourceTree = "<group>"; };
+		80626C6B1575A4AF00A67533 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		80626C6D1576755400A67533 /* iconcopy.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = iconcopy.icns; path = ../../../../Downloads/iconcopy.icns; sourceTree = "<group>"; };
+		80626C6F1576758D00A67533 /* iconcopy.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iconcopy.icns; sourceTree = "<group>"; };
 		80E25466157277CB00B7ABA7 /* WATool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WATool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E2546A157277CB00B7ABA7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		80E2546D157277CB00B7ABA7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		80E2546E157277CB00B7ABA7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		80E2546F157277CB00B7ABA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		80E25472157277CB00B7ABA7 /* WATool-Info.plist */ = {isa = PBXFileReference; path = "WATool-Info.plist"; sourceTree = "<group>"; };
+		80E25472157277CB00B7ABA7 /* WATool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WATool-Info.plist"; sourceTree = "<group>"; };
 		80E25474157277CB00B7ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80E25476157277CB00B7ABA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		80E25478157277CB00B7ABA7 /* WATool-Prefix.pch */ = {isa = PBXFileReference; path = "WATool-Prefix.pch"; sourceTree = "<group>"; };
+		80E25478157277CB00B7ABA7 /* WATool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WATool-Prefix.pch"; sourceTree = "<group>"; };
 		80E2547A157277CB00B7ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		80E2547C157277CB00B7ABA7 /* WATAppDelegate.h */ = {isa = PBXFileReference; path = WATAppDelegate.h; sourceTree = "<group>"; };
+		80E2547C157277CB00B7ABA7 /* WATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WATAppDelegate.h; sourceTree = "<group>"; };
 		80E2547D157277CB00B7ABA7 /* WATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WATAppDelegate.m; sourceTree = "<group>"; };
 		80E25480157277CB00B7ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		80EB6E8B157CF0A000EFF37E /* WAToolSL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WAToolSL-Info.plist"; sourceTree = "<group>"; };
+		80EB6E8D157CF0A000EFF37E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80EB6E8F157CF0A000EFF37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80EB6E91157CF0A000EFF37E /* WAToolSL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAToolSL-Prefix.pch"; sourceTree = "<group>"; };
+		80EB6E93157CF0A000EFF37E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		80EB6E95157CF0A000EFF37E /* WATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WATAppDelegate.h; sourceTree = "<group>"; };
+		80EB6E96157CF0A000EFF37E /* WATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WATAppDelegate.m; sourceTree = "<group>"; };
+		80EB6E99157CF0A100EFF37E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		80EB6EA8157CF13A00EFF37E /* WAToolSL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WAToolSL-Info.plist"; sourceTree = "<group>"; };
+		80EB6EAA157CF13A00EFF37E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80EB6EAC157CF13B00EFF37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80EB6EAE157CF13B00EFF37E /* WAToolSL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAToolSL-Prefix.pch"; sourceTree = "<group>"; };
+		80EB6EB0157CF13B00EFF37E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		80EB6EB2157CF13B00EFF37E /* WATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WATAppDelegate.h; sourceTree = "<group>"; };
+		80EB6EB3157CF13B00EFF37E /* WATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WATAppDelegate.m; sourceTree = "<group>"; };
+		80EB6EB6157CF13B00EFF37E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80626C641575984500A67533 /* libsqlite3.0.dylib in Frameworks */,
 				80E2546B157277CB00B7ABA7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +73,12 @@
 		80E2545B157277CB00B7ABA7 = {
 			isa = PBXGroup;
 			children = (
+				80626C6F1576758D00A67533 /* iconcopy.icns */,
+				80626C6B1575A4AF00A67533 /* AddressBook.framework */,
+				80626C631575984500A67533 /* libsqlite3.0.dylib */,
 				80E25470157277CB00B7ABA7 /* WATool */,
+				80EB6E89157CF0A000EFF37E /* WAToolSL */,
+				80EB6EA6157CF13A00EFF37E /* WAToolSL */,
 				80E25469157277CB00B7ABA7 /* Frameworks */,
 				80E25467157277CB00B7ABA7 /* Products */,
 			);
@@ -82,10 +114,13 @@
 		80E25470157277CB00B7ABA7 /* WATool */ = {
 			isa = PBXGroup;
 			children = (
+				80626C6D1576755400A67533 /* iconcopy.icns */,
 				80E2547C157277CB00B7ABA7 /* WATAppDelegate.h */,
 				80E2547D157277CB00B7ABA7 /* WATAppDelegate.m */,
 				80E2547F157277CB00B7ABA7 /* MainMenu.xib */,
 				80E25471157277CB00B7ABA7 /* Supporting Files */,
+				80626C681575989D00A67533 /* SQLiteDatabase.h */,
+				80626C691575989D00A67533 /* SQLiteDatabase.m */,
 			);
 			path = WATool;
 			sourceTree = "<group>";
@@ -98,6 +133,52 @@
 				80E25476157277CB00B7ABA7 /* main.m */,
 				80E25478157277CB00B7ABA7 /* WATool-Prefix.pch */,
 				80E25479157277CB00B7ABA7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80EB6E89157CF0A000EFF37E /* WAToolSL */ = {
+			isa = PBXGroup;
+			children = (
+				80EB6E95157CF0A000EFF37E /* WATAppDelegate.h */,
+				80EB6E96157CF0A000EFF37E /* WATAppDelegate.m */,
+				80EB6E98157CF0A100EFF37E /* MainMenu.xib */,
+				80EB6E8A157CF0A000EFF37E /* Supporting Files */,
+			);
+			path = WAToolSL;
+			sourceTree = "<group>";
+		};
+		80EB6E8A157CF0A000EFF37E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80EB6E8B157CF0A000EFF37E /* WAToolSL-Info.plist */,
+				80EB6E8C157CF0A000EFF37E /* InfoPlist.strings */,
+				80EB6E8F157CF0A000EFF37E /* main.m */,
+				80EB6E91157CF0A000EFF37E /* WAToolSL-Prefix.pch */,
+				80EB6E92157CF0A000EFF37E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80EB6EA6157CF13A00EFF37E /* WAToolSL */ = {
+			isa = PBXGroup;
+			children = (
+				80EB6EB2157CF13B00EFF37E /* WATAppDelegate.h */,
+				80EB6EB3157CF13B00EFF37E /* WATAppDelegate.m */,
+				80EB6EB5157CF13B00EFF37E /* MainMenu.xib */,
+				80EB6EA7157CF13A00EFF37E /* Supporting Files */,
+			);
+			path = WAToolSL;
+			sourceTree = "<group>";
+		};
+		80EB6EA7157CF13A00EFF37E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80EB6EA8157CF13A00EFF37E /* WAToolSL-Info.plist */,
+				80EB6EA9157CF13A00EFF37E /* InfoPlist.strings */,
+				80EB6EAC157CF13B00EFF37E /* main.m */,
+				80EB6EAE157CF13B00EFF37E /* WAToolSL-Prefix.pch */,
+				80EB6EAF157CF13B00EFF37E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,7 +211,7 @@
 			attributes = {
 				CLASSPREFIX = WAT;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = Xairro;
+				ORGANIZATIONNAME = LukasKlein.com;
 			};
 			buildConfigurationList = 80E25460157277CB00B7ABA7 /* Build configuration list for PBXProject "WATool" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -157,6 +238,8 @@
 				80E25475157277CB00B7ABA7 /* InfoPlist.strings in Resources */,
 				80E2547B157277CB00B7ABA7 /* Credits.rtf in Resources */,
 				80E25481157277CB00B7ABA7 /* MainMenu.xib in Resources */,
+				80626C6E1576755400A67533 /* iconcopy.icns in Resources */,
+				80626C701576758D00A67533 /* iconcopy.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +252,7 @@
 			files = (
 				80E25477157277CB00B7ABA7 /* main.m in Sources */,
 				80E2547E157277CB00B7ABA7 /* WATAppDelegate.m in Sources */,
+				80626C6A1575989D00A67533 /* SQLiteDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +283,54 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		80EB6E8C157CF0A000EFF37E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EB6E8D157CF0A000EFF37E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80EB6E92157CF0A000EFF37E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EB6E93157CF0A000EFF37E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		80EB6E98157CF0A100EFF37E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EB6E99157CF0A100EFF37E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		80EB6EA9157CF13A00EFF37E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EB6EAA157CF13A00EFF37E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80EB6EAF157CF13B00EFF37E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EB6EB0157CF13B00EFF37E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		80EB6EB5157CF13B00EFF37E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80EB6EB6157CF13B00EFF37E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -218,7 +350,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -239,7 +371,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -290,6 +422,7 @@
 				80E25486157277CB00B7ABA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
