@@ -32,6 +32,7 @@
     if(sqlite3_prepare_v2(database, sql, -1, &statement, NULL) != SQLITE_OK)
     {
         NSLog(@"[SQLITE] Error when preparing query!");
+        NSLog(@"%s SQL error '%s' (%1d)", __FUNCTION__, sqlite3_errmsg(database), sqlite3_errcode(database));
     }else{
         NSMutableArray *result = [NSMutableArray array];
         while(sqlite3_step(statement) == SQLITE_ROW)

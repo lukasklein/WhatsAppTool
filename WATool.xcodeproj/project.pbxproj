@@ -210,7 +210,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WAT;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = LukasKlein.com;
 			};
 			buildConfigurationList = 80E25460157277CB00B7ABA7 /* Build configuration list for PBXProject "WATool" */;
@@ -384,9 +384,11 @@
 		80E25485157277CB00B7ABA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WATool/WATool-Prefix.pch";
 				INFOPLIST_FILE = "WATool/WATool-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,9 +397,11 @@
 		80E25486157277CB00B7ABA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WATool/WATool-Prefix.pch";
 				INFOPLIST_FILE = "WATool/WATool-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

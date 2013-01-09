@@ -75,8 +75,10 @@
     [_chatContactsNumbers removeAllObjects];
     NSMutableArray *chatContacts = [NSMutableArray arrayWithCapacity:0];
     NSMutableArray *chatContactsNumbers = [NSMutableArray arrayWithCapacity:0];
-    SQLiteDatabase *database = [[SQLiteDatabase alloc] initWithPath:[[[_backups objectAtIndex:[_backupSelector indexOfSelectedItem]] objectForKey:@"backupdir"] stringByAppendingPathComponent:@"1b6b187a1b60b9ae8b720c79e2c67f472bab09c0"]]; // SHA-1 of AppDomain-net.whatsapp.WhatsApp-Documents/ChatStorage.sqlite
-    NSArray *result = [database performQuery:@"SELECT ZFROMJID, ZTEXT, ZMESSAGEDATE FROM ZWAMESSAGE WHERE ZFROMJID<>'' GROUP BY ZFROMJID"];
+    NSString *database_path = [[[_backups objectAtIndex:[_backupSelector indexOfSelectedItem]] objectForKey:@"backupdir"] stringByAppendingPathComponent:@"1b6b187a1b60b9ae8b720c79e2c67f472bab09c0"]; // SHA-1 of AppDomain-net.whatsapp.WhatsApp-Documents/ChatStorage.sqlite
+
+    SQLiteDatabase *database = [[SQLiteDatabase alloc] initWithPath:database_path];
+    NSArray *result = [database performQuery:@"SELECT ZFROMJID, ZTEXT, ZMESSAGEDATE FROM ZWAMESSAGE WHERE ZFROMJID<>'' GROUP BY ZFROMJID;"];
     for(NSArray *row in result)
     {
         NSString *number = [[[row objectAtIndex:0] componentsSeparatedByString:@"@"] objectAtIndex:0];
@@ -135,7 +137,10 @@
 - (NSString *)nameByNumber:(NSString *)number
 {
     SQLiteDatabase *database = [[SQLiteDatabase alloc] initWithPath:[[[_backups objectAtIndex:[_backupSelector indexOfSelectedItem]] objectForKey:@"backupdir"] stringByAppendingPathComponent:@"1b6b187a1b60b9ae8b720c79e2c67f472bab09c0"]]; // SHA-1 of AppDomain-net.whatsapp.WhatsApp-Documents/ChatStorage.sqlite
-    NSArray *result = [database performQuery:[NSString stringWithFormat:@"SELECT ZDISPLAYNAME FROM ZWAFAVORITE WHERE ZWHATSAPPID='%@'", number]];
+    NSArray *result = [database performQuery:[NSString stringWithFormat:@"SELECT ZPARTNERNAME FROM ZWACHATSESSION WHERE ZCONTACTJID='%@@s.whatsapp.net'", number]];
+    if([result count] == 0) {
+        return @"Unknown";
+    }
     for(NSArray *row in result)
     {
         return [row objectAtIndex:0];
